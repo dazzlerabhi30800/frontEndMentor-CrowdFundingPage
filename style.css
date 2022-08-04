@@ -86,7 +86,7 @@ header {
   color: var(--Moderate-cyan);
 }
 
-.border {
+.divider {
   background: rgba(204, 204, 204, 0.76);
   width: 100%;
   height: 1px;
@@ -560,7 +560,7 @@ main {
   opacity: 1;
 }
 
-.pledge--choose--card > pledge {
+.pledge--choose--card > h6 {
   color: black;
   font-weight: 700;
   font-size: 1rem;
@@ -568,7 +568,7 @@ main {
   flex-direction: column;
 }
 
-pledge > span {
+h6 > span {
   color: var(--Moderate-cyan);
   font-weight: 500;
 }
@@ -692,7 +692,7 @@ pledge > span {
     margin: 0 1.5rem;
   }
 
-  .nav--list .border {
+  .nav--list .divider {
     display: none;
   }
 
@@ -910,7 +910,7 @@ pledge > span {
     opacity: 1;
   }
 
-  .pledge--choose--card > pledge {
+  .pledge--choose--card > h6 {
     color: black;
     font-weight: 700;
     font-size: 1rem;
@@ -918,7 +918,7 @@ pledge > span {
     flex-direction: column;
   }
 
-  pledge > span {
+  h6 > span {
     color: var(--Moderate-cyan);
     font-weight: 500;
   }
