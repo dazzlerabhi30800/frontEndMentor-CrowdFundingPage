@@ -20,7 +20,9 @@
 
 body {
   position: relative;
+  transition: all 0.3s linear;
 }
+
 body.active {
   overflow: hidden;
 }
@@ -48,6 +50,7 @@ header {
   width: fit-content;
   height: max-content;
 }
+
 .nav--list {
   display: flex;
   flex-direction: column;
@@ -65,10 +68,12 @@ header {
   opacity: 0;
   transition: all 0.3s linear;
 }
+
 .nav--list.active {
   transform: translate(-50%, 50px);
   opacity: 1;
 }
+
 .nav--list li {
   margin: 0px 8px;
   color: #000;
@@ -76,9 +81,11 @@ header {
   font-weight: 500;
   transition: all 0.3s ease-in;
 }
+
 .nav--list li:hover {
   color: var(--Moderate-cyan);
 }
+
 .border {
   background: rgba(204, 204, 204, 0.76);
   width: 100%;
@@ -88,6 +95,7 @@ header {
 .menu--btn {
   cursor: pointer;
 }
+
 .menu--btn img {
   transition: all 0.3s linear;
 }
@@ -105,6 +113,7 @@ main {
   z-index: 20;
   position: relative;
 }
+
 .first--container {
   display: flex;
   flex-direction: column;
@@ -118,6 +127,7 @@ main {
   align-items: center;
   text-align: center;
 }
+
 .first--container img {
   width: fit-content;
   height: fit-content;
@@ -125,18 +135,21 @@ main {
   left: 50%;
   transform: translate(-50%, -35px);
 }
+
 .heading {
   margin: 2.2rem 0px 8px 0;
   font-size: 1.7rem;
   width: clamp(300px, 50vw, 750px);
   transition: all 0.3s linear;
 }
+
 .desc {
   margin: 10px 0px 1.2rem 0;
   font-size: 0.9rem;
   color: var(--Dark-gray);
   width: clamp(300px, 35vw, 600px);
 }
+
 .project--container {
   display: flex;
   gap: 1rem;
@@ -144,6 +157,7 @@ main {
   align-items: center;
   width: 100%;
 }
+
 .project--container button {
   padding: 15px 1.5rem;
   border: none;
@@ -156,6 +170,7 @@ main {
   transition: all 0.3s linear;
   font-size: 1rem;
 }
+
 .project--container button:hover {
   background: var(--Dark-cyan);
 }
@@ -167,6 +182,7 @@ main {
 .bookmark.bookmarked svg circle {
   fill: var(--Dark-cyan);
 }
+
 .bookmark.bookmarked svg path {
   fill: #fff;
 }
@@ -184,6 +200,7 @@ main {
   gap: 1rem;
   font-family: var(--font-commissioner);
 }
+
 .stats--wrapper {
   display: flex;
   flex-direction: column;
@@ -194,21 +211,25 @@ main {
   align-items: center;
   text-align: center;
 }
+
 .stats--wrapper h2,
 .stats--wrapper h3,
 .stats--wrapper h4 {
   font-weight: 700;
 }
+
 .stats--wrapper p {
   color: var(--Dark-gray);
   margin: 5px 0;
 }
+
 .margin {
   background-color: hsla(0, 0%, 48%, 0.281);
   width: 100px;
   height: 2px;
   margin: 10px;
 }
+
 .loader--wrapper {
   position: relative;
   background: hsla(0, 0%, 48%, 0.185);
@@ -217,6 +238,7 @@ main {
   margin: 5px auto;
   border-radius: 30px;
 }
+
 .loader {
   background: var(--Moderate-cyan);
   position: absolute;
@@ -239,26 +261,31 @@ main {
   font-family: var(--font-commissioner);
   gap: 1.5rem;
 }
+
 .info--wrapper {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   padding: 0rem 1rem;
 }
+
 .info--wrapper h5 {
   font-size: 1.6rem;
 }
+
 .info--wrapper p {
   font-size: 0.9rem;
   color: hsl(0, 0%, 48%);
   line-height: 1.8;
 }
+
 .pledge--wrapper {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   padding: 0rem 1rem;
 }
+
 .pledge--card {
   border: 1px solid hsla(0, 0%, 48%, 0.493);
   padding: 0.7rem 1rem;
@@ -267,17 +294,21 @@ main {
   grid-template-columns: repeat(1, 1fr);
   gap: 0.5rem;
 }
+
 .pledge--card h6 {
   font-size: 1.1rem;
 }
+
 .pledge--card span {
   color: var(--Moderate-cyan);
 }
+
 .pledge--card .description {
   margin: 10px 0;
   color: var(--Dark-gray);
   line-height: 1.8;
 }
+
 .pLeft {
   font-size: 1.8rem;
   color: #000;
@@ -286,10 +317,12 @@ main {
   align-items: center;
   gap: 5px;
 }
+
 .pLeft span {
   font-size: 1rem;
   color: var(--Dark-gray);
 }
+
 .reward--btn {
   width: max-content;
   border: none;
@@ -300,10 +333,10 @@ main {
   background: var(--Moderate-cyan);
   font-weight: 700;
   font-size: 1.1rem;
-  cursor: pointer;
   transition: all 0.3s linear;
   margin: 5px 0;
 }
+
 .reward--btn:hover {
   background: var(--Dark-cyan);
 }
@@ -312,17 +345,21 @@ main {
 .pledge--card.fade {
   border: 1px solid rgb(228, 228, 228);
 }
+
 .pledge--card.fade h6 {
   color: #7e7e7e;
 }
+
 .pledge--card.fade span {
   color: #8aadac;
 }
+
 .pledge--card.fade .description {
   margin: 10px 0;
   color: #ccc;
   line-height: 1.8;
 }
+
 .pledge--card.fade .pLeft {
   font-size: 1.8rem;
   color: #818181;
@@ -331,10 +368,12 @@ main {
   align-items: center;
   gap: 5px;
 }
+
 .pledge--card.fade .pLeft span {
   font-size: 1rem;
   color: #ccc;
 }
+
 .pledge--card.fade .reward--btn {
   width: max-content;
   border: none;
@@ -349,6 +388,7 @@ main {
   transition: all 0.3s linear;
   margin: 5px 0;
 }
+
 .reward--btn:hover {
   background: var(--Dark-cyan);
 }
@@ -368,10 +408,12 @@ main {
   transition: all 0.3s linear;
   z-index: -1;
 }
+
 .support--wrapper.show {
   opacity: 1;
   z-index: 444;
 }
+
 .support--container {
   display: flex;
   flex-direction: column;
@@ -386,19 +428,23 @@ main {
   text-align: center;
   font-family: var(--font-commissioner);
 }
+
 .support--container > img {
   width: 100px;
   height: 100px;
 }
+
 .support--container > span {
   font-size: 1.5rem;
   font-weight: 700;
 }
+
 .support--container > p {
   font-size: 1rem;
   line-height: 1.8;
   color: var(--Dark-gray);
 }
+
 .support--container > button {
   outline: none;
   border: none;
@@ -410,6 +456,7 @@ main {
   border-radius: 30px;
   transition: all 0.3s linear;
 }
+
 .support--container > button:hover {
   background-color: var(--Dark-cyan);
 }
@@ -423,16 +470,18 @@ main {
   left: 0;
   background: rgba(12, 12, 12, 0.322);
   justify-content: center;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
   display: none;
   opacity: 0;
   z-index: 4;
 }
+
 .pledge--choose--wrapper.started {
   opacity: 1;
   display: flex;
   z-index: 10000;
 }
+
 .pledge--choose--container {
   width: var(--card-width);
   background: white;
@@ -448,19 +497,22 @@ main {
   scroll-behavior: smooth;
   margin-top: 4rem;
 }
+
 .pledge--choose--container > img {
   width: 18px;
   height: 18px;
   align-self: flex-end;
   position: fixed;
 }
+
 .pledge--choose--container > span {
   font-size: 1.3rem;
   font-weight: 700;
 }
+
 .pledge--choose--container > p {
   color: var(--Dark-gray);
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .pledge--choose {
@@ -470,6 +522,7 @@ main {
   align-items: center;
   gap: 1.3rem;
 }
+
 .pledge--choose--card {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -478,9 +531,11 @@ main {
   padding: 1rem;
   border-radius: 10px;
 }
+
 .pledge--choose--card.select {
-  border : 1px solid var(--Moderate-cyan);
+  border: 1px solid var(--Moderate-cyan);
 }
+
 .pledge--choose--card .select--circle {
   width: 20px;
   height: 20px;
@@ -490,6 +545,7 @@ main {
   justify-content: center;
   align-items: center;
 }
+
 .select--circle .circle {
   width: 85%;
   height: 85%;
@@ -499,9 +555,11 @@ main {
   transition: all 0.3s linear;
   opacity: 0;
 }
+
 .select--circle.selected .circle {
   opacity: 1;
 }
+
 .pledge--choose--card > pledge {
   color: black;
   font-weight: 700;
@@ -509,14 +567,26 @@ main {
   display: flex;
   flex-direction: column;
 }
+
 pledge > span {
   color: var(--Moderate-cyan);
   font-weight: 500;
 }
-.pledge--choose--card > p {
+
+.pledge--choose--card .desc-2 {
   color: var(--Dark-gray);
-  font-size: .8rem;
+  font-size: 0.8rem;
   line-height: 1.6;
+}
+
+.pledge--left {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.pledge--left span {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--Dark-gray);
 }
 
 .second--wrapper {
@@ -526,37 +596,43 @@ pledge > span {
   gap: 1.3rem;
   border-top: 1px solid #ccc;
   padding-top: 10px;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
   opacity: 0;
   height: 0;
   overflow: hidden;
   display: flex;
 }
+
 .pledge--choose--card.select .second--wrapper {
   opacity: 1;
   height: auto;
   overflow: visible;
 }
+
 .second--wrapper h6 {
   font-size: 1rem;
   color: var(--Dark-gray);
   font-weight: 400;
 }
+
 .second--wrapper .input--wrapper {
   display: flex;
   gap: 10px;
   justify-content: center;
   align-items: center;
 }
+
 .input--wrapper .input--container {
   border: 1px solid #ccc;
   border-radius: 30px;
   padding: 8px;
 }
+
 .input--container > input {
   border: none;
   outline: none;
 }
+
 .input--wrapper > button {
   border: none;
   outline: none;
@@ -571,12 +647,15 @@ pledge > span {
 .pledge--choose--card.fade--out {
   border: 1px solid rgb(231, 231, 231);
 }
+
 .pledge--choose--card.fade--out > * {
   color: #ccc;
 }
+
 .pledge--choose--card.fade--out .select--circle {
   border: 1px solid #ccc;
 }
+
 .pledge--choose--card.fade--out > pledge span {
   color: #ccc;
 }
@@ -586,6 +665,7 @@ pledge > span {
     background: url("./images/image-hero-desktop.jpg") no-repeat;
     background-size: cover;
   }
+
   .nav--list {
     position: initial;
     display: flex;
@@ -604,18 +684,22 @@ pledge > span {
     opacity: 1;
     align-items: center;
   }
+
   .nav--list li {
     color: white;
     font-weight: 700;
     font-size: 15px;
     margin: 0 1.5rem;
   }
+
   .nav--list .border {
     display: none;
   }
+
   .menu--btn {
     display: none;
   }
+
   /* MAIN */
   /* FIRST CONTAINER  */
   .desc {
@@ -624,6 +708,7 @@ pledge > span {
     color: var(--Dark-gray);
     width: clamp(300px, 35vw, 600px);
   }
+
   .project--container {
     display: flex;
     gap: 1rem;
@@ -631,6 +716,7 @@ pledge > span {
     align-items: center;
     width: 100%;
   }
+
   .bookmark {
     background: rgba(204, 204, 204, 0.342);
     width: 200px;
@@ -639,19 +725,24 @@ pledge > span {
     align-items: center;
     gap: 1rem;
   }
+
   .bookmark span {
     display: block;
     transition: all 0.3s linear;
   }
+
   .bookmark:hover span {
     color: var(--Moderate-cyan);
   }
+
   .bookmark.bookmarked svg circle {
     fill: var(--Dark-cyan);
   }
+
   .bookmark.bookmarked svg path {
     fill: #fff;
   }
+
   .bookmark.bookmarked span {
     color: var(--Dark-cyan);
     font-weight: 700;
@@ -670,6 +761,7 @@ pledge > span {
     gap: 1rem;
     font-family: var(--font-commissioner);
   }
+
   .stats--wrapper {
     display: flex;
     flex-direction: row;
@@ -680,15 +772,18 @@ pledge > span {
     align-items: center;
     text-align: center;
   }
+
   .stats--wrapper h2,
   .stats--wrapper h3,
   .stats--wrapper h4 {
     font-weight: 700;
   }
+
   .stats--wrapper p {
     color: var(--Dark-gray);
     margin: 5px 0;
   }
+
   .margin {
     background-color: hsla(0, 0%, 48%, 0.281);
     width: 80px;
@@ -696,6 +791,7 @@ pledge > span {
     margin: 10px;
     transform: rotate(90deg);
   }
+
   .loader--wrapper {
     position: relative;
     background: hsla(0, 0%, 48%, 0.185);
@@ -704,6 +800,7 @@ pledge > span {
     margin: 5px auto;
     border-radius: 30px;
   }
+
   .loader {
     background: var(--Moderate-cyan);
     position: absolute;
@@ -713,6 +810,149 @@ pledge > span {
     left: 0;
     border-radius: 30px;
   }
+
+  /* Pledge Container  */
+  .pledge--card {
+    border: 1px solid hsla(0, 0%, 48%, 0.493);
+    padding: 0.7rem 1rem;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+
+  .pledge--card h6 {
+    font-size: 1.1rem;
+  }
+
+  .pledge--card span {
+    color: var(--Moderate-cyan);
+    grid-column-start: 3;
+  }
+
+  .pledge--card .description {
+    margin: 10px 0;
+    color: var(--Dark-gray);
+    line-height: 1.8;
+    grid-row-start: 2;
+    grid-column-start: span 3;
+  }
+
+  .pLeft {
+    font-size: 1.8rem;
+    color: #000;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .pLeft span {
+    font-size: 1rem;
+    color: var(--Dark-gray);
+  }
+
+  .reward--btn {
+    width: max-content;
+    border: none;
+    outline: none;
+    padding: 8px 1rem;
+    border-radius: 30px;
+    color: white;
+    background: var(--Moderate-cyan);
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.3s linear;
+    margin: 5px 0;
+    grid-column-start: 3;
+  }
+
+  .reward--btn:hover {
+    background: var(--Dark-cyan);
+  }
+
+  /* SECOND PLEDGE CARD CONTAINER */
+  .pledge--choose--card {
+    display: grid;
+    grid-template-columns: 30px 200px 1fr;
+    gap: 0.7rem;
+    border: 1px solid var(--Dark-gray);
+    padding: 1rem;
+    border-radius: 10px;
+    place-items: center;
+  }
+
+  .pledge--choose--card.select {
+    border: 1px solid var(--Moderate-cyan);
+  }
+
+  .pledge--choose--card .select--circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid var(--Dark-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .select--circle .circle {
+    width: 85%;
+    height: 85%;
+    background: var(--Moderate-cyan);
+    border-radius: 50%;
+    margin: auto;
+    transition: all 0.3s linear;
+    opacity: 0;
+  }
+
+  .select--circle.selected .circle {
+    opacity: 1;
+  }
+
+  .pledge--choose--card > pledge {
+    color: black;
+    font-weight: 700;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  pledge > span {
+    color: var(--Moderate-cyan);
+    font-weight: 500;
+  }
+
+  .pledge--choose--card .desc-2 {
+    color: var(--Dark-gray);
+    font-size: 0.8rem;
+    line-height: 1.6;
+    grid-row-start: 2;
+    grid-column-start: span 3;
+  }
+
+  .pledge--left {
+    grid-row-start: 1;
+    grid-column-start:4; 
+  }
+
+  .second--wrapper {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 1.3rem;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    transition: all 0.3s linear;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    width: 100%;
+  }
 }
 
 @media (hover: hover) {
@@ -720,21 +960,31 @@ pledge > span {
     fill: white;
     transition: all 0.3s linear;
   }
+
   .project--container svg {
     cursor: pointer;
   }
+
+  .reward--btn {
+    cursor: pointer;
+  }
+
   .bookmark {
     cursor: pointer;
   }
+
   .support--container > button {
     cursor: pointer;
   }
+
   .pledge--choose--container img {
     cursor: pointer;
   }
+
   .pledge--choose--card .select--circle {
     cursor: pointer;
   }
+
   .input--wrapper > button {
     cursor: pointer;
   }

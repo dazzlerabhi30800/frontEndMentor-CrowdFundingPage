@@ -14,6 +14,7 @@ const hideNavbar = document.querySelector('.navbar');
 const pledgeCards = document.querySelectorAll('.pledge--choose--card');
 const circleBtns = document.querySelectorAll('.one');
 const closeBtn = document.querySelector('.pledge--choose--container img');
+const selectBtn = document.querySelectorAll('.active--btn');
 let isClick = false;
 
 // Functions
@@ -52,6 +53,7 @@ const handleSupport = () => {
     supportWrapper.classList.add("show");
     document.body.classList.add("active");
     isClick = true;
+    window.scrollTo(0,0);
   } else {
     supportWrapper.classList.remove("show");
     document.body.classList.remove("active");
@@ -84,6 +86,18 @@ const closePledge = () => {
    pledgeContainer.classList.remove('started');
    isClick = false;
    hideNavbar.style.zIndex = "30";
+   document.body.classList.remove('active');
+}
+
+function handleReward(index,event) {
+  circleBtns.forEach(btn => btn.classList.remove('selected'));
+  pledgeCards.forEach(card => card.classList.remove('select'));
+  pledgeContainer.classList.add('started'); 
+  pledgeCards[index+1].classList.add('select');
+  circleBtns[index+1].classList.add('selected');
+  hideNavbar.style.zIndex = "1";
+  document.body.classList.add('active');
+  window.scrollTo(0,0);
 }
 
 // EventListeners
@@ -94,3 +108,8 @@ projectBtn.addEventListener("click", handleSupport);
 gotBtn.addEventListener('click', gotHandle)
 circleBtns.forEach(btn => btn.addEventListener('click', handleSelect));
 closeBtn.addEventListener('click', closePledge);
+selectBtn.forEach((btn, i) => {
+  btn.addEventListener('click', () => {
+    handleReward(i);
+  })
+})
