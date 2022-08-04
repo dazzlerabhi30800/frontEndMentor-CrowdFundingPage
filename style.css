@@ -95,9 +95,7 @@ header {
   height: 1px;
 }
 
-.menu--btn {
-  cursor: pointer;
-}
+
 
 .menu--btn img {
   transition: all 0.3s linear;
@@ -169,7 +167,6 @@ main {
   color: white;
   font-weight: 700;
   background: var(--Moderate-cyan);
-  cursor: pointer;
   transition: all 0.3s linear;
   font-size: 1rem;
 }
@@ -959,6 +956,12 @@ h6 > span {
 }
 
 @media (hover: hover) {
+  .menu--btn {
+  cursor: pointer;
+ }
+ .project--container button {
+  cursor: pointer;
+ }
   .project--container svg:hover path {
     fill: white;
     transition: all 0.3s linear;
